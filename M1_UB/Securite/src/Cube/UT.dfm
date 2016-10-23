@@ -1,0 +1,39 @@
+object FT: TFT
+  Left = 198
+  Top = 114
+  BorderStyle = bsDialog
+  Caption = 'Crypto'
+  ClientHeight = 157
+  ClientWidth = 226
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object RG1: TRadioGroup
+    Left = 8
+    Top = 16
+    Width = 209
+    Height = 105
+    Caption = 'Veuillez choisir le mode de l'#39'application'
+    ItemIndex = 0
+    Items.Strings = (
+      'Mode Chiffrer / Envoyer'
+      'Mode Recevoir / D'#233'chiffrer')
+    TabOrder = 0
+  end
+  object BBtn1: TBitBtn
+    Left = 72
+    Top = 128
+    Width = 75
+    Height = 25
+    TabOrder = 1
+    OnClick = BBtn1Click
+    Kind = bkOK
+  end
+end
