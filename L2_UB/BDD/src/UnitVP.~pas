@@ -1,0 +1,32 @@
+unit UnitVP;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls;
+
+type
+  TFVP = class(TForm)
+    Image1: TImage;
+    Label1: TLabel;
+    procedure FormShow(Sender: TObject);
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  FVP: TFVP;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFVP.FormShow(Sender: TObject);
+begin
+image1.Picture.LoadFromFile('../img/v1.bmp');
+end;
+
+end.
